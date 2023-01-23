@@ -11,7 +11,6 @@ const connectDB = require('./server/database/connection.js');
 
 
 
-
 dotenv.config({path: '.env'})
 const PORT=process.env.PORT ||3000
 
