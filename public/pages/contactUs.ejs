@@ -1,0 +1,191 @@
+<!-- include header -->
+<%- include('../include/header.ejs') %>
+<!-- /include header -->
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<head>
+  <style>
+  
+    .table tbody tr:nth-of-type(even){
+      background-color: lightgray;
+    }
+  
+    .table tbody tr{
+      border-bottom: 2px solid #009879;
+    }
+    
+    /*.table tbody tr td:first-of-type{
+      font-style: italic;
+    }*/
+
+    .table tbody tr:hover{
+      color: aqua;
+      background-color: rgb(31, 39, 39);
+      transform: scale(1.05);
+      cursor: grab;
+    }
+    /*link hover pe color change ke liye */
+    .table tbody tr td a:hover{
+      color: aqua;
+    }
+    
+  </style>
+</head>
+<body class="hero-anime"> 
+  <%- include('../include/clientNavbar.ejs') %>
+    <br>
+  <br>
+  <br>
+    <br>
+    <br>
+    <!-- <h1 style="text-align: center;color: black;font-style: italic;"><u>TABLE FOR CONTACT</u></h1> -->
+    <br>
+   
+<div class="container form-area">
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+ <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Branch</th>
+      <th scope="col" style="text-align: center;">Name</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody class="myTable">
+    <tr>
+      <td>Allahabad </td>
+      <td style="text-align: center;">Abhishek Singh</td>
+      <td>cpc-all@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Andhra Pradesh</td>
+      <td style="text-align: center;">Vishnu Atla</td>
+      <td>cpc-ap@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Bombay</td>
+  <td style="text-align: center;">Atharva Nadkar</td>
+  <td>cpc-bom@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Kolkata</td>
+  <td style="text-align: center;">Anshuman Tejasvi</td>
+  <td>cpc-cal@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Chhattisgarh</td>
+  <td style="text-align: center;">Govind Rao</td>
+  <td>cpc-cg@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Delhi</td>
+      <td style="text-align: center;">Ayush Sharma</td>
+      <td>cpc-del@tcc.in</td>
+    </tr>
+    
+    <tr>
+      <td>Guwahati</td>
+  <td style="text-align: center;">Arunabh Saikiya</td>
+  <td>cpc-asm@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Gujarat</td>
+  <td style="text-align: center;">Pragyan Tripathi</td>
+  <td>cpc-guj@tcc.in</td>
+    </tr>
+    <tr>
+      <td> Himachal Pradesh</td>
+      <td style="text-align: center;">Alok Das</td>
+      <td>>cpc-hp@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Jammu and Kashmir</td>
+      <td style="text-align: center;">Sameeksha Singh</td>
+      <td>cpc-jk@tcc.in</td>
+    </tr>
+    <tr>
+      <td> Jharkhand</td>
+      <td style="text-align: center;">Akash Tomar</td>
+      <td>cpc-jhr@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Karnataka</td>
+      <td style="text-align: center;">Yash </td>
+      <td>cpc-kar@tcc.in</td>    </tr>
+    <tr>
+      <td>Kerala</td>
+      <td style="text-align: center;">Daniel Robert</td>
+      <td>cpc-ker@tcc.in</td></td>
+    </tr>
+    <tr>
+      <td>Madhya Pradesh</td>
+  <td style="text-align: center;">Man Singh Shekhawat</td>
+  <td>cpc-mp@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Madras</td>
+      <td style="text-align: center;">Sethupathi</td>
+      <td>cpc-tn@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Manipur</td>
+  <td style="text-align: center;">Maitri Raj</td>
+  <td>cpc-mnp@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Meghalaya</td>
+  <td style="text-align: center;">Shekhar Dinkar</td>
+  <td>cpc-mgl@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Orissa</td>
+      <td style="text-align: center;">Payal Rajpoot</td>
+      <td>cpc-ori@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Patna</td>
+      <td style="text-align: center;">Aryan Amresh</td>
+      <td>cpc-pat@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Punjab and Haryana</td>
+      <td style="text-align: center;">Sundar Dayal Singh</td>
+      <td>cpc-phc@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Rajasthan</td>
+      <td style="text-align: center;">Priyanka Ranavat</td>
+      <td>cpc-raj@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Sikkim</td>
+  <td style="text-align: center;">Jay Sharma</td>
+  <td>cpc-sik@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Tripura</td>
+      <td style="text-align: center;">Ninad Tambe</td>
+      <td>cpc-trp@tcc.in</td>
+    </tr>
+    <tr>
+      <td>Uttarakhand</td>
+      <td style="text-align: center;">Keshar Rajput</td>
+      <td>cpc-uk@tcc.in</td>
+    </tr>
+
+  </tbody>
+</table>
+        </div>
+   <!-- include header -->
+    <%- include('../include/footer.ejs') %>
+<!-- /include header -->   
+</body>

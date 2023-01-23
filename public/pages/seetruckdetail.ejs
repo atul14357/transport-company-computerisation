@@ -1,0 +1,89 @@
+
+<!-- include header -->
+<%- include('../include/header.ejs') %>
+<!-- /include header -->
+
+<link rel="stylesheet" href="styles/form.css">
+<body class="hero-anime"> 
+
+     <div class="container">
+            <!-- form handling -->
+            <br>
+            <br>
+            <br>
+            <!-- <div class="form-title text-center">
+                <div class="box-nav d-flex justify-between">
+                <a href="/view" class="border-shadow">
+                    <span class="text-gradient"><i class="fas fa-angle-double-left"></i>View Cases</span>
+                </a>
+            </div> -->
+            <h2 class="text-dark">TRUCK DETAILS</h2>
+            </div>
+
+<!-- <form method="POST" id="update_user"> -->
+    <!-- <div>
+        <div class="row">
+            <div></div>case no.
+        </div>
+    </div> -->
+    <div class="new_user">
+
+       
+        <div class="form-group">
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <label for="truckNumber" class="text-dark">Truck Number  &nbsp; &nbsp;&nbsp;&nbsp;      : &nbsp; &nbsp;&nbsp;&nbsp;</label>
+
+            <span name="trucknumber">  <%= user.truckNumber %></span>
+            </div>
+            <div class="form-group">
+            <label for="date" class="text-dark">Date&nbsp; &nbsp;&nbsp;&nbsp; :&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <span><%= user.date %></span>
+            </div>
+            <div class="form-group">
+            <label for="name" class="text-dark">Truck&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <span><%= user.Truck %></span>
+              </div>
+            <div class="form-group">
+            <label for="name" class="text-dark">  Sender&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <span><%= user.Sender %></span>
+              </div>
+
+              <div class="form-group">
+                <label for="name" class="text-dark">  Sender Address&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+                <span><%= user.Addresssender %></span>
+                  </div>
+               <div class="form-group">
+            <label for="name" class="text-dark">Receiver&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <span><%= user.Receiver %></span>
+              </div>
+              <div class="form-group">
+                <label for="name" class="text-dark">Receiver Address&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+                <span><%= user.Addressreceiver %></span>
+                  </div>
+        <div class="form-group">
+            <label for="status" class="text-dark">Status&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+             <span><%= user.Status %></span>
+        </div>
+        
+        
+         <div class="form-group">
+            <label for="name" class="text-dark">Consignment Number&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+            <span><%= user.ConsignmentNumber %></span>
+              </div> 
+                      <div class="form-group">
+                        <label for="name" class="text-dark">Volume&nbsp; &nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;&nbsp;</label>
+                        <span><%= user.Volume %></span>
+                          </div>
+                          
+
+        <!-- <div class="form-group">
+            <button type="submit" class="btn text-dark update">Update</button>
+        </div> -->
+    </div>
+ 
+<!-- </form> -->
+      </div>
+   <!-- include header -->
+    <%- include('../include/footer.ejs') %>
+<!-- /include header -->   
+
